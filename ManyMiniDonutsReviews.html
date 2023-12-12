@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8"/>
+
+<html>
+
+    <style>
+
+        html {
+            background-color: #DEEBF7;
+        }
+
+        body {
+            margin: auto auto;
+            width: 1200px;
+            min-height: 100%;
+            background-color: #3B3838;
+        }
+
+    /* HEADER */
+            
+        header {
+            background-color: #3B3838;
+            height: 80px;
+        }
+
+        header > img {
+            height: 50px;
+            margin: 15px 0 0 93px;
+        }
+
+    /* NAVAGATION MENU */
+
+        nav ul {
+            margin: 0px;
+            padding: 20px 0px 20px 100px;
+
+            list-style-type: none;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 15; 
+
+            background-color: #CC66FF;
+            color: white;         
+        }
+
+        nav ul li {
+            display: inline;
+            padding-right: 60px;
+
+            text-decoration: none;   
+        }
+
+        nav ul li a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            color: #ffc3c2;
+            cursor: pointer;
+        }
+
+        nav ul li a:active {
+            color: #ffb1af;
+        }
+
+    /* REVIEWS pink */
+        #reviews {
+            margin-top: 10px;
+            
+            height: 1200px;
+            padding: 50px 250px;
+            background-color: #FED2D2;
+        }
+
+        .review_person {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin-top: 15px;
+
+                        
+            border-radius: 80px;
+            border: 5px solid #B4C7E7;  
+
+        }
+
+        .review_name {
+            position: absolute;
+            text-align: center;
+            margin-top: 130px;
+
+
+            font-family: Vladimir Script;
+            font-size: 20px;
+
+        }
+        
+        .review_title {
+            position: absolute;
+            padding-left: 150px;
+
+            font-family: Arial;
+            font-weight: bold;
+
+            color:#3B3838;
+        }
+
+        .star_purple {
+            color: #FD8887;  
+        }
+        .star_grey {
+            color: #79848F;
+        }
+
+        .stars_div {
+            position: absolute;
+            padding-left: 550px;
+            padding-top: 16px;
+        }
+
+
+        .review_box {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 140px;
+            padding: 12px;
+            width: 500px;
+            height: auto;
+            
+            font-size: 16px;
+            font-family: Arial;
+            text-align: left;
+
+            color:#3B3838;
+            background-color:#DEEBF7; 
+            
+            border-radius: 20px;
+            border: 5px solid #B4C7E7;  
+        }
+
+        .review_date {
+            font-size: 11px;
+            color: #79848F;
+        }
+
+        #review_2 {
+            margin-top: 200px;
+        }
+        #review_3 {
+            margin-top: 400px;
+        }
+        #review_4 {
+            margin-top: 600px;
+        }
+        #review_5 {
+            margin-top: 800px;
+        }
+        #review_6 {
+            margin-top: 1000px;
+        }
+
+
+
+        
+
+        
+
+    /* CONTACT purple */
+        /* Phone and Email */
+        #contact {
+            margin-top: 10px;
+
+            height: 150px;
+            width: 1200px;
+
+            background-color: #CC66FF;
+        }
+
+        #contact_info {
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 30px;
+            list-style-type: none;
+
+            font-family: Arial;
+            font-size: 20px;
+
+            color: white;
+        }
+
+        #contact_info li:first-of-type {
+            
+            font-weight: bold;
+            font-size: 22px;
+
+            padding-bottom: 10px;
+        }
+
+        /* Rectangles */
+        .contact_rectangles {
+            position: absolute;
+            width: 5px;
+            height: 110px;
+            margin-top: 20px;
+
+            background-color: #DB93FF;
+        }
+
+        #contact_rectangle_1 {
+            margin-left: 400px;
+        }
+
+        #contact_rectangle_2 {
+            margin-left: 800px;
+        }
+
+        /* Socail media */
+
+        #logos {
+            position: absolute;
+            list-style-type: none;
+            
+
+            margin-left: 420px;
+            margin-top: 30px;
+        }
+
+        #logos > li {
+            width: 55px;
+            height: 55px;
+            display: inline-block;
+            margin-left: 25px;
+            
+            border-radius: 20px;
+        }
+
+        #pinterest_logo {
+            background: url("C:\\Users\\family\\Documents\\pinterest.png") center center / 100%;
+        }
+
+        #instagram_logo {
+            background: url("C:\\Users\\family\\Documents\\instagram.png") center center / 100%;
+        }
+
+        #facebook_logo {
+            background: url("C:\\Users\\family\\Documents\\facebook.png") center center / 100%;
+        }
+
+        #contanct_at {
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 500px;
+
+            font-family: Arial;
+            font-size: 15px;
+
+            color: white;
+        }
+
+        /* Address */
+
+        #contact_address {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 870px;
+            list-style-type: none;
+
+            font-family: Arial;
+            font-size: 20px;
+
+            color: white;
+        }
+
+        /* FOOTER grey */
+        footer {
+            height: 50px;
+            text-align: center;        
+            padding: 35px 15px 0px 15px;
+            /* margin-left: 960px; */
+
+            font-family: Arial;
+            
+            background-color: #3B3838;
+            color: white;
+            
+        }
+
+         
+
+
+    </style>
+
+    <head>
+        <title>Many Mini Donuts</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="C:\\Users\\family\\Documents\\ManyMiniDonuts_logo.png" alt="Many Mini Donuts logo"/>
+            
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonuts.html">Home</a></li>
+                <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonuts.html#menu">Menu</a></li>
+                <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonuts.html#location">Hours</a></li>
+                <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonuts.html#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonutsReviews.html">Reviews</a></li>
+                <!-- <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonutsEvents.html">Events</a></li> -->
+                
+            </ul>
+        </nav>
+ 
+        <!-- Reviews PINK-->
+        <section id="reviews">
+
+            <!-- REVIEW 1 -->
+            <section>
+                <section>
+                    <img src= "C:\Users\family\Documents\Juliana Clark.png" alt="Juliana Clark" class="review_person">
+                    <p class="review_name">Juliana Clark</p>
+                </section>
+
+                <section>
+                    <p class="review_title">Best Donuts in Town!</p>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   
+                    <div class="stars_div">
+    
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                    
+                     </div>
+
+                </section>
+
+                <p class="review_box">
+                    All the donuts I've bought before I discovered this awesome bakery fall drastically short of these amazing mini rings of delight! The quality and service I've experienced here has always been exceptional to. I've never been to a bakery as sweet as this one. Highly recommend!
+                    <span class="review_date">December 7, 2023.</span>
+                </p>
+            </section>
+
+            <!-- REVIEW 2 -->
+            <section id="review_2">
+                <section>
+                    <img src= "C:\Users\family\Documents\Lexi Shoeman.png" alt="Lexi Shoeman" class="review_person">
+                    <p class="review_name">Lexi Shoeman</p>
+                </section>
+
+                <section>
+                    <p class="review_title">Cute and yummy</p>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   
+                    <div class="stars_div">
+    
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                    
+                     </div>
+
+                </section>
+
+                <p class="review_box">
+                    This is by far the cutest bakery I’ve ever been too! The staff are all very nice and I always have enjoyed going there! Their donuts are very, very good and I enjoy their coffee as well.
+                    <span class="review_date">November 21, 2023.</span>
+                </p>
+            </section>
+
+            <!-- REVIEW 3 -->
+            <section id="review_3">
+                <section>
+                    <img src= "C:\Users\family\Documents\Jaun Honal.png" alt="Jaun Honal" class="review_person">
+                    <p class="review_name">Jaun Honal</p>
+                </section>
+
+                <section>
+                    <p class="review_title">Good Donuts</p>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   
+                    <div class="stars_div">
+    
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_grey"></span>
+                    
+                     </div>
+
+                </section>
+
+                <p class="review_box">
+                    Good Donuts. I enjoy getting the blueberry minis and the mini special. The coffee here is pretty basic but still not bad. Customer service is good. Overall, it’s a pretty cool place.
+                    <span class="review_date">June 6, 2023.</span>
+                </p>
+            </section>
+
+            <!-- REVIEW 4 -->
+            <section id="review_4">
+                <section>
+                    <img src= "C:\Users\family\Documents\Alex Kales.png" alt="Alex Kales" class="review_person">
+                    <p class="review_name">Alex Kales</p>
+                </section>
+
+                <section>
+                    <p class="review_title">Best Donuts Ever!!!</p>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   
+                    <div class="stars_div">
+    
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                    
+                     </div>
+
+                </section>
+
+                <p class="review_box">
+                    Many Mini Donuts bakery has by far the BEST donuts that I have ever had!! The cherry fizz donut is the best one! When I bring these donuts with me to work absolutely everyone loves them, and they have started to call me the donut guy.
+                    <span class="review_date">December 13, 2023.</span>
+                </p>
+            </section>
+
+            <section id="review_5">
+                <section>
+                    <img src= "C:\Users\family\Documents\Ellie Locke.png" alt="Ellie Locke" class="review_person">
+                    <p class="review_name">Ellie Locke</p>
+                </section>
+
+                <section>
+                    <p class="review_title">Great place</p>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   
+                    <div class="stars_div">
+    
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                    
+                     </div>
+
+                </section>
+
+                <p class="review_box">
+                    Great place! I aways enjoy going here. I really love the food and the employees have always been nice and helpful.
+                    <span class="review_date">May 23, 2023.</span>
+                </p>
+            </section>
+
+            <section id="review_6">
+                <section>
+                    <img src= "C:\Users\family\Documents\Mathew Thomas.png" alt="Mathew Thomas" class="review_person">
+                    <p class="review_name">Mathew Thomas</p>
+                </section>
+
+                <section>
+                    <p class="review_title">Good</p>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   
+                    <div class="stars_div">
+    
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_grey"></span>
+                    
+                     </div>
+
+                </section>
+
+                <p class="review_box">
+                    This is a pretty good donut shop. They have really yummy donuts here. My favorite flavor are the double chocolate and cherry fizz. The coffee could be better though.  
+                    <span class="review_date">July 2, 2023.</span>
+                </p>
+            </section>
+
+
+
+
+
+        </section>
+
+
+        <!-- Contact PURPLE -->
+        <section id="contact"> 
+
+            <ul id="contact_info">
+                <li>225-235-9802</li>
+                <li>ManyMiniDonuts@gmail.com</li>
+            </ul>
+
+            <div class="contact_rectangles" id="contact_rectangle_1"></div>
+
+            <ul id="logos">
+                <li id="pinterest_logo"></li>
+                <li id="instagram_logo"></li>
+                <li id="facebook_logo"></li>
+            </ul>
+
+            <p id="contanct_at">@Many_Mini_Donuts_Bakery</p>
+
+            <div class="contact_rectangles" id="contact_rectangle_2"></div>
+
+            <ul id="contact_address">
+                <li>Many Mini Donuts</li>
+                <li>227 Purple Street</li>
+                <li>Pineview, NY 13905</li>
+            </ul>
+
+        </section>
+
+        
+    </body>
+
+    <!-- footer GREY -->
+    <footer>Many Mini Donuts &#x2665; 2023</footer>
+    
+</html>

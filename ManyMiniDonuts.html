@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8"/>
+
+<html>
+
+    <style>
+
+        html {
+            background-color: #DEEBF7;
+        }
+
+        body {
+            margin: auto auto;
+            width: 1200px;
+            min-height: 100%;
+            background-color: #3B3838;
+        }
+
+    /* HEADER */
+            
+        header {
+                background-color: #3B3838;
+                height: 80px;
+            }
+
+        header > img {
+            height: 50px;
+            margin: 15px 0 0 93px;
+        }
+
+    /* NAVAGATION MENU */
+
+        nav ul {
+            margin: 0px;
+            padding: 20px 0px 20px 100px;
+
+            list-style-type: none;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 15; 
+
+            background-color: #CC66FF;
+            color: white;         
+        }
+
+        nav ul li {
+            display: inline;
+            padding-right: 60px;
+
+            text-decoration: none;   
+        }
+
+        nav ul li a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            color: #ffc3c2;
+            cursor: pointer;
+        }
+
+        nav ul li a:active {
+            color: #ffb1af;
+        }
+
+
+
+
+    /* DONUTS WITH SPRIKLES - pink */
+
+        #donuts_with_sprinkles {
+            margin-top: 10px;
+
+
+            background: url("C:\\Users\\family\\Documents\\Donuts_with_sprinkles.png") center center / 100%;
+            height: 550px;
+            color:#3B3838;
+        } 
+
+        #donuts_with_sprinkles_box {
+            padding: 45px 35px 30px 55px;
+            width: 315px;
+            height: 300px;
+            float: right;
+            margin: 80px 90px 0 0;
+            
+            font-size: 30px;
+            font-family: Arial;
+            text-align: left;
+            font-weight: bold; 
+
+            background-color:#DEEBF7;
+            border-radius: 60px;
+            border: 5px solid #B4C7E7;   
+        }
+
+        #donuts_with_sprinkles_rectangle { 
+            width:280px;
+            height:5px;
+            margin: 20px auto auto 0px;
+
+            background-color: #B4C7E7;
+        }
+
+        #donuts_with_sprinkles_box > p {
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        #donuts_with_sprinkles_box > button{
+            margin: auto;
+            width: 140px;
+            padding: 10px 12px 10px 12px;
+
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+
+            border: none;
+            color: white;
+            background-color: #CC66FF;
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+
+        #donuts_with_sprinkles_box > button:hover {
+            color:#ffc3c2;
+        }        
+        #donuts_with_sprinkles_box > button:active {
+            color: #ffb1af;
+        }
+
+        #donuts_with_sprinkles_box > button:link {
+            color: #ffc3c2;
+            text-decoration: none;
+        }
+
+        #donuts_with_sprinkles_box > button:visited {
+            color: #ffc3c2;
+            text-decoration: none;
+        }
+
+        #donuts_with_sprinkles_box > button > a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        #donuts_with_sprinkles_box > button > a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #donuts_with_sprinkles_box > button > a:hover {
+            color: #ffc3c2;
+            cursor: pointer;
+        }
+
+        #donuts_with_sprinkles_box > button > a:active {
+            color: #ffb1af;
+        }
+
+
+    
+
+    /* MENU blue */
+        #menu {
+            /* margin-top: 10px; */
+
+            background: url("C:\\Users\\family\\Documents\\Menu5.png") center center / 100%;
+            height: 630px;
+            width: 1202px;
+            /* margin-top: 20; */
+        }
+
+        #menu_title {
+            float: left;
+            margin: 50px 0px 0px 150px;
+            padding-left: 240px;
+
+            font-family: Vladimir Script;
+            font-weight: bold; 
+            font-size: 53px;           
+            
+            color:#3B3838;
+            
+        }
+
+        #menu_box {
+            position: absolute;
+            width: 580px;
+            height: 405px;
+            margin: 120px 0px 0px 130px;
+            padding: 20px;
+            float: left;
+            
+            font-size: 16px;
+            font-family: Arial;
+            text-align: left;
+            /* font-weight: bold;  */
+
+            background-color: #79848F;
+            color: white;
+            border: 5px solid #3B3838;
+            border-radius: 60px;
+        }
+
+        #menu_box > ul > li {
+            list-style-type: none;
+        }
+
+
+        /* Menu Donuts */
+        #menu_title_donuts {
+            position: absolute;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-left: 120px;
+            /* margin-bottom: 0px; */
+        }
+
+        #menu_donuts {
+            position: absolute;
+            
+        }
+
+        #menu_donuts {
+            position: absolute;
+            margin-top: 50px;
+        }
+
+        #menu_sprinkles {
+            position: absolute;
+            margin-top: 230px;
+        }
+
+        #menu_minis {
+            position: absolute;
+            margin-top: 300px;
+        }
+
+        /* Menu Price */
+        .menu_price {
+            position: absolute;
+            margin-left: 180px;
+        }
+
+        #menu_price_donuts {
+            margin-top: 50px;
+        }
+
+        #menu_price_sprinkles {
+            margin-top: 230px;
+        }
+
+        #menu_price_minis {
+            margin-top: 300px;
+        }
+
+
+        /* Menu Second Line */
+
+        /* Menu More */
+        #menu_more {
+            position: absolute;
+            margin-left: 300px;
+        }
+        
+        /* Menu Drinks */
+        #menu_title_drinks {
+            position: absolute;
+            margin-left: 410px;
+            margin-top: 70px;
+
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        #menu_subtitle_coffee {
+            position: absolute;
+            margin-left: 340px;
+            margin-top: 100px;
+
+            text-decoration: underline;
+        }
+
+        #menu_coffee {
+            position: absolute;
+            margin-left: 300px;
+            margin-top: 120px;
+        }
+
+        #menu_subtitle_coffee_flavors {
+            position: absolute;
+            margin-left: 340px;
+            margin-top: 190px;
+
+            text-decoration: underline;
+        }
+
+        #menu_coffee_flavors {
+            position: absolute;
+            margin-left: 300px;
+            margin-top: 210px;
+        }
+
+        #menu_subtitle_other {
+            position: absolute;
+            margin-left: 340px;
+            margin-top: 280px;
+
+            text-decoration: underline;
+        }
+
+        #menu_other {
+            position: absolute;
+            margin-left: 300px;
+            margin-top: 300px;
+        }
+        
+
+        /* Menu Price Two*/
+        #menu_price_more {
+            position: absolute;
+            margin-left: 440px;
+        }
+
+        #menu_price_coffee {
+            position: absolute;
+            margin-left: 440px;
+            margin-top: 120px;
+        }
+
+        #menu_price_coffee_flavors {
+            position: absolute;
+            margin-left: 440px;
+            margin-top: 210px;
+        }
+
+        #menu_price_other {
+            position: absolute;
+            margin-left: 440px;
+            margin-top: 300px;
+        }
+
+    /* LOCATION and HOURS blue */
+        #location {
+            /* margin-top: 10px; */
+
+            background: url("C:\\Users\\family\\Documents\\Location4.png") center center / 100%;
+            height: 500px;
+            width: 1200px;
+        }
+
+        #location_box {
+            width: 540px;
+            height: 340px;
+            float: left;
+            margin: 70px 0px 0px 320px;
+            padding: 6px;
+            
+            font-family: Arial;
+            font-weight: bold; 
+
+            background-color:#DEEBF7;
+            border-radius: 60px;
+            border: 5px solid #B4C7E7;   
+        }
+
+        #location_title_hours {
+            position: absolute;
+            margin-top: 80px;
+            margin-left: 80px;
+
+            font-family: Vladimir Script;
+            font-weight: bold; 
+            font-size: 53px;           
+            
+            color:#3B3838;
+        }
+
+        #open_hours {
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 0px;
+            
+            list-style-type: none;
+            text-align: center;
+            font-size: 23px;
+            
+            color: #3B3838;
+        }
+
+        #location_rectangle {
+            position: absolute;
+            width: 5px;
+            height: 250px;
+            margin-top: 40px;
+            margin-left: 273px;
+
+            background-color: #B4C7E7;
+        }
+
+        #location_title_location {
+            position: absolute;
+            margin-top: 80px;
+            margin-left: 330px;
+
+            font-family: Vladimir Script;
+            font-weight: bold; 
+            font-size: 53px;           
+            
+            color:#3B3838;
+        }
+
+        #address {
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 270px;
+            
+            list-style-type: none;
+            text-align: center;
+            font-size: 23px;
+            
+            color: #3B3838;
+        }
+
+
+        /* REVIEWS pink */
+        #reviews {
+            height: 430px;
+            padding: 50px 250px;
+            background-color: #FED2D2;
+        }
+
+        .review_person {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin-top: 15px;
+
+                        
+            border-radius: 80px;
+            border: 5px solid #B4C7E7;  
+
+        }
+
+        .review_name {
+            position: absolute;
+            text-align: center;
+            margin-top: 130px;
+
+
+            font-family: Vladimir Script;
+            font-size: 20px;
+
+        }
+        
+        .review_title {
+            position: absolute;
+            padding-left: 150px;
+
+            font-family: Arial;
+            font-weight: bold;
+
+            color:#3B3838;
+        }
+
+        .star_purple {
+            color: #FD8887;  
+        }
+        .star_grey {
+            color: #79848F;
+        }
+
+        .stars_div {
+            position: absolute;
+            padding-left: 550px;
+            padding-top: 16px;
+        }
+
+        .review_box {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 140px;
+            padding: 12px;
+            width: 500px;
+            height: auto;
+            
+            font-size: 16px;
+            font-family: Arial;
+            text-align: left;
+
+            color:#3B3838;
+            background-color:#DEEBF7; 
+            
+            border-radius: 20px;
+            border: 5px solid #B4C7E7;  
+        }
+
+        .review_date {
+            font-size: 11px;
+            color: #79848F;
+        }
+
+        #review_2 {
+            margin-top: 200px;
+        }
+
+        #reviews_see_more {
+            position: absolute;
+            width: 140px;
+            padding: 10px 12px 10px 12px;
+            margin-top: 180px;
+            margin-left: 530px;
+
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+
+            border: none;
+            color: white;
+            background-color: #CC66FF;
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+
+        #reviews_see_more:hover {
+            color:#ffc3c2;
+        }        
+        #reviews_see_more:active {
+            color: #ffb1af;
+        }
+
+        #reviews_see_more:link {
+            color: #ffc3c2;
+            text-decoration: none;
+        }
+
+        #reviews_see_more:visited {
+            color: #ffc3c2;
+            text-decoration: none;
+        }
+
+        #reviews_see_more > a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        #reviews_see_more > a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #reviews_see_more > a:hover {
+            color: #ffc3c2;
+            cursor: pointer;
+        }
+
+        #reviews_see_more > a:active {
+            color: #ffb1af;
+        }
+
+
+       
+    /* CONTACT purple */
+        /* Phone and Email */
+        #contact {
+            margin-top: 10px;
+
+            height: 150px;
+            width: 1200px;
+
+            background-color: #CC66FF;
+        }
+
+        #contact_info {
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 30px;
+            list-style-type: none;
+
+            font-family: Arial;
+            font-size: 20px;
+
+            color: white;
+        }
+
+        #contact_info li:first-of-type {
+            
+            font-weight: bold;
+            font-size: 22px;
+
+            padding-bottom: 10px;
+        }
+
+        /* Rectangles */
+        .contact_rectangles {
+            position: absolute;
+            width: 5px;
+            height: 110px;
+            margin-top: 20px;
+
+            background-color: #DB93FF;
+        }
+
+        #contact_rectangle_1 {
+            margin-left: 400px;
+        }
+
+        #contact_rectangle_2 {
+            margin-left: 800px;
+        }
+
+        /* Socail media */
+
+        #logos {
+            position: absolute;
+            list-style-type: none;
+            
+
+            margin-left: 420px;
+            margin-top: 30px;
+        }
+
+        #logos > li {
+            width: 55px;
+            height: 55px;
+            display: inline-block;
+            margin-left: 25px;
+            
+            border-radius: 20px;
+        }
+
+        #pinterest_logo {
+            background: url("C:\\Users\\family\\Documents\\pinterest.png") center center / 100%;
+        }
+
+        #instagram_logo {
+            background: url("C:\\Users\\family\\Documents\\instagram.png") center center / 100%;
+        }
+
+        #facebook_logo {
+            background: url("C:\\Users\\family\\Documents\\facebook.png") center center / 100%;
+        }
+
+        #contanct_at {
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 500px;
+
+            font-family: Arial;
+            font-size: 15px;
+
+            color: white;
+        }
+
+        /* Address */
+
+        #contact_address {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 870px;
+            list-style-type: none;
+
+            font-family: Arial;
+            font-size: 20px;
+
+            color: white;
+        }
+
+         
+
+
+    /* FOOTER grey */
+        footer {
+        height: 50px;
+        text-align: center;        
+        padding: 35px 15px 0px 15px;
+        /* margin-left: 960px; */
+
+        font-family: Arial;
+        
+        background-color: #3B3838;
+        color: white;
+        
+        }
+
+
+    </style>
+
+    <head>
+        <title>Many Mini Donuts</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="C:\\Users\\family\\Documents\\ManyMiniDonuts_logo.png" alt="Many Mini Donuts logo"/>
+            
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonuts.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#location">Hours</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonutsReviews.html">Reviews</a></li>
+                <!-- <li><a href="C:\Users\family\Documents\html_css_course\ManyMiniDonutsEvents.html">Events</a></li> -->
+                
+            </ul>
+        </nav>
+        
+
+        <!-- Donuts with sprinkles PINK -->
+        <section id="donuts_with_sprinkles">
+            <div id="donuts_with_sprinkles_box">
+                Many Mini Donuts bringing you the Many Mini joys of life!
+
+                <div id="donuts_with_sprinkles_rectangle"></div>
+                <p>Here at Many Mini Donuts bakery we are proud to bring you quality donuts and drinks!</p> 
+                <button><a href="#menu">View Menu</a></button>
+                <button><a href="#location">Open Hours</a></button>
+            </div> 
+        </section>
+
+
+        <!-- Menu BLUE -->            
+            <div id="menu_title">
+                Menu
+            </div>
+
+        <section id="menu">
+
+
+            <div id="menu_box">
+
+                <!-- Menu Line 1 -->
+                <p id="menu_title_donuts">Donuts</p>
+
+                <ul id="menu_donuts">
+                    <li>Cherry Fiz</li> 
+                    <li>Blueberry</li>  
+                    <li>Lemon Lime</li>  
+                    <li>Bubble Gum</li>  
+                    <li>Cinnamon</li>   
+                    <li>Double Chocolate</li>
+                    <li>Cookie Crumble</li>
+                    <li>Hot Fudge Sunday</li>
+                    <li>Apple Fritter</li>
+                </ul>
+
+                <ul id="menu_sprinkles"> 
+                    <li>Pink Sprinkled</li>
+                    <li>Chocolate Sprinkled</li>
+                    <li>Vanilla Sprinkled</li>
+                </ul>
+
+                <ul id="menu_minis">  
+                    <li>Blueberry Minis</li>
+                    <li>Vanilla Minis</li>
+                    <li>Chocolate Minis</li>
+                    <li>Strawberry Minis</li>
+                    <li>Mixed Minis</li>
+                </ul>
+                
+
+                <!-- Menu line 2 -->
+                <ul class="menu_price" id="menu_price_donuts">
+                    <li>$1.75</li>
+                    <li>$1.75</li>
+                    <li>$1.75</li>
+                    <li>$1.75</li>
+                    <li>$1.75</li>
+                    <li>$1.75</li>
+                    <li>$1.75</li>
+                    <li>$1.75</li>
+                    <li>$1.75</li>
+                </ul> 
+
+                <ul class="menu_price" id="menu_price_sprinkles">
+                    <li>$1.00</li>
+                    <li>$1.00</li>
+                    <li>$1.00</li>
+                </ul>
+
+                <ul class="menu_price" id="menu_price_minis">
+                    <li>$4.00</li>
+                    <li>$4.00</li>
+                    <li>$4.00</li>
+                    <li>$4.00</li>
+                    <li>$4.00</li>  
+                </ul>
+
+
+                <!-- Menu line 3 -->
+                <ul id="menu_more">
+                    <li>Dozen Donuts</li>
+                    <li>Mini Special</li>
+                </ul>
+
+                <p id="menu_title_drinks">Drinks</p>
+
+                <p id="menu_subtitle_coffee">Coffee</p>
+                <ul id="menu_coffee">
+                    <li>Latte</li>
+                    <li>Expresso</li>
+                    <li>Capuchino</li>
+                </ul>
+
+                <p id="menu_subtitle_coffee_flavors">Coffee Flavors</p>
+                <ul id="menu_coffee_flavors">
+                    <li>Carmel</li>
+                    <li>Chocolate</li>
+                    <li>Vanilla</li>
+                </ul>
+
+                <p id="menu_subtitle_other">Others</p>
+                <ul id="menu_other">
+                    <li>Hot Chocolate</li>
+                    <li>Hot Apple Cider</li>
+                    <li>Spicy Apple Mug</li>
+                    <li>Ice Tea</li>
+                    <li>Lemonade</li>
+                </ul> 
+
+
+                <!-- Price Line 4 -->
+                <ul id="menu_price_more">
+                    <li>$16.00</li>
+                    <li>$13.00</li>
+                </ul>
+
+                <ul id="menu_price_coffee">
+                    <li>$2.00</li>
+                    <li>$2.00</li>
+                    <li>$2.00</li>
+                </ul>
+
+                <ul id="menu_price_coffee_flavors"> 
+                    <li>+$0.50</li>
+                    <li>+$0.50</li>
+                    <li>+$0.50</li>
+                </ul>
+
+                <ul id="menu_price_other">
+                    <li>$2.00</li>
+                    <li>$2.00</li>
+                    <li>$2.00</li>
+                    <li>$2.00</li>
+                    <li>$2.00</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Location and Hours PINK -->
+        <section id="location">
+
+            <div id="location_box">
+
+                <p id="location_title_hours">
+                    Hours
+                </p>
+                <ul id="open_hours">
+                    <li>Monday - Saturday</li>
+                    <li>7:00am - 5:00pm</li>
+                </ul>
+
+                <div id="location_rectangle"></div>
+
+                <p id="location_title_location">
+                    Location
+                </p>
+                <ul id="address">
+                    <li>227 Purple Street</li>
+                    <li>Pineview, NY</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Review LIGHT PINK -->
+        <!-- REVIEW 1 -->
+        <section id="reviews">
+            <section>
+                <section>
+                    <img src= "C:\Users\family\Documents\Juliana Clark.png" alt="Juliana Clark" class="review_person">
+                    <p class="review_name">Juliana Clark</p>
+                </section>
+
+                <section>
+                    <p class="review_title">Best Donuts in Town!</p>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+                    <div class="stars_div">
+
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                    
+                        </div>
+
+                </section>
+
+                <p class="review_box">
+                    All the donuts I've bought before I discovered this awesome bakery fall drastically short of these amazing mini rings of delight! The quality and service I've experienced here has always been exceptional too. I've never been to a bakery as sweet as this one. Highly recommend!
+                    <span class="review_date">December 7, 2023.</span>
+                </p>
+            </section>
+
+            <!-- REVIEW 2 -->
+            <section id="review_2">
+                <section>
+                    <img src= "C:\Users\family\Documents\Lexi Shoeman.png" alt="Lexi Shoeman" class="review_person">
+                    <p class="review_name">Lexi Shoeman</p>
+                </section>
+
+                <section>
+                    <p class="review_title">Cute and yummy</p>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    
+                    <div class="stars_div">
+
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                        <span class="fa fa-star star_purple"></span>
+                    
+                    </div>
+                </section>
+            </section>
+
+            <p class="review_box">
+                This is by far the cutest bakery I’ve ever been to! The staff are all very nice and I always have enjoyed going there! Their donuts are very, very good and I enjoy their coffee as well.
+                <span class="review_date">November 21, 2023.</span>
+            </p>            
+            
+            <button id="reviews_see_more">
+                <a href="C:\Users\family\Documents\html_css_course\ManyMiniDonutsReviews.html">See more</a>
+            </button>
+
+        </section>
+
+
+
+
+        <!-- Contact PURPLE -->
+        <section id="contact"> 
+
+            <ul id="contact_info">
+                <li>225-235-9802</li>
+                <li>ManyMiniDonuts@gmail.com</li>
+            </ul>
+
+            <div class="contact_rectangles" id="contact_rectangle_1"></div>
+
+            <ul id="logos">
+                <li id="pinterest_logo" href="https://www.pinterest.com"></li>
+                <li id="instagram_logo"></li>
+                <li id="facebook_logo"></li>
+            </ul>
+
+            <p id="contanct_at">@Many_Mini_Donuts_Bakery</p>
+
+            <div class="contact_rectangles" id="contact_rectangle_2"></div>
+
+            <ul id="contact_address">
+                <li>Many Mini Donuts</li>
+                <li>227 Purple Street</li>
+                <li>Pineview, NY 13905</li>
+            </ul>
+
+        </section>
+        
+    </body>
+
+    <!-- footer GREY -->
+    <footer>Many Mini Donuts &#x2665; 2023</footer>
+    
+</html>
+
